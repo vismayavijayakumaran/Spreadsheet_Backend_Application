@@ -25,7 +25,7 @@ public class Spreadsheet {
             return Integer.parseInt(rawValue);
         }
 
-        // Case 2: Formula evaluation
+       
         return evaluateFormula(rawValue);
     }
 
@@ -40,7 +40,7 @@ public class Spreadsheet {
         int sum = 0;
 
         for (String token : tokens) {
-            sum += getCellValue(token); // recursive evaluation
+            sum += getCellValue(token); 
         }
         return sum;
     }
